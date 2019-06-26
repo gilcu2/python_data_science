@@ -10,5 +10,3 @@ scipy
 seaborn
 six
 sklearn
-scipy
-svm

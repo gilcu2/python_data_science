@@ -1,8 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import random
-import sklearn
-import svm
+from sklearn import svm
 # %matplotlib inline
 
 points = []
@@ -23,8 +22,11 @@ interception=clf.intercept_[0]
 print("pendiente:", w)
 print("intercepto:", interception)
 
+m = -w[0]/w[1]
+interc = -interception/w[1]
 
-
+rect_x = np.linspace(-1,1,100)
+rect_y = m*rect_x+interc
 
 fig = plt.figure()
 ax = fig.add_subplot(1, 1, 1)
