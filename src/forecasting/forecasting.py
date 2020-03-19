@@ -82,7 +82,7 @@ def arima_optimization(data, pdq, seasonal_pdq):
 
 
 def main():
-    file_path = "data/Superstore.xls"
+    file_path = "../../data/Superstore.xls"
 
     dataframe = load_data_frame(file_path)
 

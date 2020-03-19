@@ -10,3 +10,4 @@ scipy
 seaborn
 six
 sklearn
+pytest
