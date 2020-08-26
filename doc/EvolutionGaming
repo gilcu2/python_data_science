@@ -1,0 +1,7 @@
+Functional libraries: Tagless Final and libraries such as Cats and Cats Effect to achieve this.
+
+ Cats / Scalaz, Cats Effect, ZIO, Monix, Akka Actors, Persistence, Cluster & HTTP, http4s, Tagless Final and/or Scala.js.
+Experience with Event Sourcing & CQRS;
+Experience with Docker, Kubernetes, Kafka, Cassandra.
+
+Amazon test: 23280666285642

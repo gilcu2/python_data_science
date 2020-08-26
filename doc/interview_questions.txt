@@ -1,0 +1,45 @@
+ Why spark streaming and not kafka streams
+
+ Easy code reuse between batch and streaming
+ More languages
+ Run in cluster
+ Support notebook environment
+
+·         How do you handle late arriving data in streaming
+
+In structure streaming the system keep states of old aggregates. When a data arrived from a previous window they are updated
+if its time is less that the current watermark
+
+·         How do you save the offsets
+
+Auto or Manual
+
+·         Build automation tools (sbt v/s maven)
+
+SBT easier for scala, incremental compilation, shell
+
+·         Size of cluster, version of spark, scala , kafka
+
+16 nodes of 32 procs and 256GB, 2.3,2.11,2.4
+
+·         Calculate number of partitions in kafka topic ?
+
+Given the expected throughput for our system and the throughput of producer and consumer it is computed the number of
+requires producer and consumers and get the maximum
+
+·         Aggregations in spark
+
+groupBy plus resumin operation like count or sum
+
+·         Performance tuning of spark applications
+
+Optimize settings
+Serialization Kryo
+Memory fraction for execution and storage
+Garbaje collection
+Level of paralellism
+Partitioning files
+File formats like
+    Parquet(Columnar) Filtering
+    Avro (Row) Efficient write
+    ORC (Columnar)
